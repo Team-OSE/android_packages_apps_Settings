@@ -65,6 +65,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
 
     private static final String KEY_CONTAINER = "container";
     private static final String KEY_OSE_LOGO= "logo";
+    private static final String KEY_OSE_DONATE= "donate";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
     private static final String KEY_TERMS = "terms";
     private static final String KEY_LICENSE = "license";
@@ -193,6 +194,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         }
 
         getPreferenceScreen().findPreference(KEY_OSE_LOGO).setWidgetLayoutResource(R.layout.ose_logo);
+
+        getPreferenceScreen().findPreference(KEY_OSE_DONATE).setWidgetLayoutResource(R.layout.donate);
     }
 
     @Override
@@ -280,6 +283,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         } else if (preference.getKey().equals(KEY_OSE_LOGO)) {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse(getActivity().getString(R.string.logo_link)));
+            startActivity(browserIntent);
+        } else if (preference.getKey().equals(KEY_OSE_DONATE)) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(getActivity().getString(R.string.donate_link)));
             startActivity(browserIntent);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

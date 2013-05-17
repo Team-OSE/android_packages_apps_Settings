@@ -994,4 +994,9 @@
     <string name="partition_info_sdext">/sd-ext (EXT)</string>
     <string name="partition_info_used_of">/</string>
 
+    <!-- Donate to Team-OSE Builds -->
+    <string name="donate_ose_title">Support Team-OSE</string>
+    <string name="donate_ose_summary">Donate to Team-OSE.</string>
+    <string name="donate_link" formatted="false">http://goo.gl/EJxbSh</string>
+
 </resources>

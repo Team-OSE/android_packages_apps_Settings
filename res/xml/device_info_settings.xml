@@ -18,7 +18,12 @@
         android:title="@string/about_settings">
 
         <PreferenceScreen android:key="logo"
-                         android:layout="@layout/ose_logo" />
+                          android:layout="@layout/ose_logo" />
+
+        <PreferenceScreen
+                android:key="donate"
+                android:title="@string/donate_ose_title"
+                android:summary="@string/donate_ose_summary" />
 
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
