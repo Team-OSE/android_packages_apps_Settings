@@ -16,22 +16,39 @@
 
 package com.android.settings.ose;
 
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
+
 import android.app.ActivityManager;
+import android.app.ActivityManagerNative;
+import android.app.IActivityManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.provider.Settings;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
+import android.util.DisplayMetrics;
+import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class AppearanceSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        Preference.OnPreferenceChangeListener, Indexable {
+    private static final String TAG = "AppearanceSettings";
+
+    private static final String KEY_LCD_DENSITY = "lcd_density";
+
+    private ListPreference mLcdDensityPreference;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,6 +56,32 @@ public class AppearanceSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.ose_appearance_settings);
 
+        mLcdDensityPreference = (ListPreference) findPreference(KEY_LCD_DENSITY);
+        int defaultDensity = DisplayMetrics.DENSITY_DEVICE;
+        String[] densityEntries = new String[8];
+        for (int idx = 0; idx < 8; ++idx) {
+            int pct = (75 + idx*5);
+            densityEntries[idx] = Integer.toString(defaultDensity * pct / 100);
+        }
+        int currentDensity = DisplayMetrics.DENSITY_CURRENT;
+        mLcdDensityPreference.setEntries(densityEntries);
+        mLcdDensityPreference.setEntryValues(densityEntries);
+        mLcdDensityPreference.setValue(String.valueOf(currentDensity));
+        mLcdDensityPreference.setOnPreferenceChangeListener(this);
+        updateLcdDensityPreferenceDescription(currentDensity);
+    }
+
+    private void updateLcdDensityPreferenceDescription(int currentDensity) {
+        ListPreference preference = mLcdDensityPreference;
+        String summary;
+        if (currentDensity < 10 || currentDensity >= 1000) {
+            // Unsupported value
+            summary = "";
+        }
+        else {
+            summary = Integer.toString(currentDensity) + " DPI";
+        }
+        preference.setSummary(summary);
     }
 
     @Override
@@ -46,7 +89,31 @@ public class AppearanceSettings extends SettingsPreferenceFragment implements
         super.onResume();
     }
 
+    public void writeLcdDensityPreference(int value) {
+        try {
+            SystemProperties.set("persist.sys.lcd_density", Integer.toString(value));
+        }
+        catch (Exception e) {
+            Log.w(TAG, "Unable to save LCD density");
+        }
+        try {
+            final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
+            if (am != null) {
+                am.restart();
+            }
+        }
+        catch (RemoteException e) {
+            Log.e(TAG, "Failed to restart");
+        }
+    }
+
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
+        final String key = preference.getKey();
+        if (KEY_LCD_DENSITY.equals(key)) {
+            int value = Integer.parseInt((String) newValue);
+            writeLcdDensityPreference(value);
+            updateLcdDensityPreferenceDescription(value);
+        }
+        return true;
     }
 }
