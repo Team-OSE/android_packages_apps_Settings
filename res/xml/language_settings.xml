@@ -103,6 +103,14 @@
                 android:summary="@string/high_touch_sensitivity_summary"
                 android:defaultValue="false" />
 
+        <!-- Gesture pad settings -->
+        <Preference
+            android:key="gesture_pad_settings">
+            <intent
+                android:action="com.ose.action.LAUNCH_GESTURE_PAD_SETTINGS"
+                android:targetPackage="com.ose.settings.device"
+                android:targetClass="com.ose.settings.device.GesturePadSettings" />
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
