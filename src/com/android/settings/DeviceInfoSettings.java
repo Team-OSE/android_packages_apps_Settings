@@ -53,6 +53,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import android.net.Uri;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -63,6 +64,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
 
     private static final String KEY_CONTAINER = "container";
+    private static final String KEY_OSE_LOGO= "logo";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
     private static final String KEY_TERMS = "terms";
     private static final String KEY_LICENSE = "license";
@@ -189,6 +191,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+
+        getPreferenceScreen().findPreference(KEY_OSE_LOGO).setWidgetLayoutResource(R.layout.ose_logo);
     }
 
     @Override
@@ -273,6 +277,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
                 }
             }
+        } else if (preference.getKey().equals(KEY_OSE_LOGO)) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(getActivity().getString(R.string.logo_link)));
+            startActivity(browserIntent);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

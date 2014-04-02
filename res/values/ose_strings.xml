@@ -978,4 +978,7 @@
     <!-- Sound & display settings screen, setting option summary to change LCD density -->
     <string name="lcd_density_summary">xxx DPI</string>
 
+    <!-- OSE Logo -->
+    <string name="logo_link" formatted="false">https://www/drdevs.com/subs/ose/</string>
+
 </resources>
