@@ -981,4 +981,8 @@
     <!-- OSE Logo -->
     <string name="logo_link" formatted="false">https://www/drdevs.com/subs/ose/</string>
 
+    <!-- OSE Extra Info -->
+    <string name="lsextrainfo">Extra information</string>
+    <string name="lsextrainfo_summary">Display extra info for cpu, display, etc</string>
+
 </resources>
