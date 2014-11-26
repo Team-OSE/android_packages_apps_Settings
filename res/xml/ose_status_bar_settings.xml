@@ -18,6 +18,17 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/ose_status_bar_settings_title">
 
+    <!-- Status bar tweaks -->
+    <PreferenceCategory
+        android:title="@string/status_bar_style_title">
+
+        <PreferenceScreen
+            android:fragment="com.android.settings.ose.StatusBarClockStyle"
+            android:key="clock_style_pref"
+            android:title="@string/status_bar_clock" />
+
+    </PreferenceCategory>
+
     <com.android.settings.ose.SystemSettingSwitchPreference
         android:key="show_su_indicator"
         android:title="@string/su_indicator"
