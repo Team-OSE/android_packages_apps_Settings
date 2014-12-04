@@ -17,8 +17,8 @@ package com.android.settings.ose.qs;
 
 import android.content.Context;
 
-import com.android.internal.util.cm.QSConstants;
-import com.android.internal.util.cm.QSUtils;
+import com.android.internal.util.ose.QSConstants;
+import com.android.internal.util.ose.QSUtils;
 import com.android.settings.R;
 
 /**
