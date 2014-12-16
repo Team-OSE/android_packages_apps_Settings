@@ -15,8 +15,9 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/status_bar_title">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/ose_status_bar_settings_title">
 
     <com.android.settings.ose.SystemSettingSwitchPreference
         android:key="status_bar_brightness_control"
