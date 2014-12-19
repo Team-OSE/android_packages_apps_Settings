@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2014 The OSE Project
+<!-- Copyright (C) 2015 The OSE Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -33,6 +33,11 @@
         android:title="@string/su_indicator"
         android:summary="@string/su_indicator_summary"
         android:defaultValue="false" />
+
+    <PreferenceScreen
+        android:key="traffic"
+        android:title="@string/traffic_category"
+        android:fragment="com.android.settings.ose.NetworkTraffic" />
 
     <ListPreference
         android:key="status_bar_battery_style"
