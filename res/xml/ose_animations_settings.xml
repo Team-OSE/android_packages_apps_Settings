@@ -19,6 +19,12 @@
     android:title="@string/ose_animations_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+            android:key="ose_animation"
+            android:title="@string/ose_animation_title"
+            android:summary="@string/ose_animation_summary"
+            android:fragment="com.android.settings.ose.AnimationControls" />
+
     <ListPreference
             android:key="toast_animation"
             android:title="@string/toast_animation_title"
