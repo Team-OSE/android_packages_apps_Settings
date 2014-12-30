@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2014 OSE
  *
- * Modified by crDroid Android
+ * Modified by OSE
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.ose.AnimBarPreference;
 import com.android.settings.R;
 
-import com.android.internal.util.crdroid.AwesomeAnimationHelper;
+import com.android.internal.util.ose.AwesomeAnimationHelper;
 
 import java.util.Arrays;
 
