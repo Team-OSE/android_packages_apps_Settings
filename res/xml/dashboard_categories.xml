@@ -84,7 +84,6 @@
                 android:icon="@drawable/ic_settings_home"
                 />
 
-        <!-- Status bar -->
         <dashboard-tile
                 android:id="@+id/interface_settings"
                 android:icon="@drawable/ic_settings_ose_extras"
