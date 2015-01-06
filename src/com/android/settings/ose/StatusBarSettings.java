@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceScreen;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
@@ -43,17 +44,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+    private static final String KEY_BATTERY_BAR_STATUS = "battery_bar";
 
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
 
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
+    private PreferenceScreen mBatteryBar;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.ose_status_bar_settings);
+        PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -73,6 +77,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
         enableStatusBarBatteryDependents(batteryStyle);
         mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
+
+        mBatteryBar = (PreferenceScreen) prefSet.findPreference(KEY_BATTERY_BAR_STATUS);
+        updateBatteryBarDescription();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateBatteryBarDescription();
     }
 
     @Override
@@ -104,6 +117,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             mStatusBarBatteryShowPercent.setEnabled(false);
         } else {
             mStatusBarBatteryShowPercent.setEnabled(true);
+        }
+    }
+
+    private void updateBatteryBarDescription() {
+        if (mBatteryBar == null) {
+            return;
+        }
+        if (Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUSBAR_BATTERY_BAR, 1) != 0) {
+            mBatteryBar.setSummary(getString(R.string.enabled));
+        } else {
+            mBatteryBar.setSummary(getString(R.string.disabled));
         }
     }
 
