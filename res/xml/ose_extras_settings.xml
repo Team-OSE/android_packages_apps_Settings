@@ -36,6 +36,10 @@
         android:title="@string/ose_general_settings_title" />
 
     <PreferenceScreen
+        android:fragment="com.android.settings.ose.NavigationSettings"
+        android:title="@string/navigation_pref_title" />
+
+    <PreferenceScreen
         android:fragment="com.android.settings.ose.NotificationDrawerSettings"
         android:title="@string/notification_drawer_title" />
 

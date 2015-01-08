@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 OSE Project
+<!-- Copyright (C) 2014 OSE
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,10 +17,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
-        android:key="privacy_guard_default"
-        android:title="@string/privacy_guard_default_title"
-        android:summary="@string/privacy_guard_default_summary"
-        android:persistent="false" />
+    <PreferenceScreen
+        android:key="pie_button_style"
+        android:fragment="com.android.settings.ose.PieButtonStyleSettings"
+        android:title="@string/pie_button_style"
+        android:summary="@string/pie_button_style_summary" />
+
+    <PreferenceScreen
+            android:key="pie_button_second_layer"
+            android:fragment="com.android.settings.ose.dslv.ActionListViewSettings"
+            android:title="@string/pie_button_second_layer"
+            android:summary="@string/pie_button_second_layer_summary">
+        <extra android:name="actionMode" android:value="2" />
+        <extra android:name="maxAllowedButtons" android:value="7" />
+    </PreferenceScreen>
 
 </PreferenceScreen>
