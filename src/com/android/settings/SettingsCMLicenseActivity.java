@@ -32,11 +32,11 @@ import com.android.internal.app.AlertController;
 import android.content.DialogInterface;
 
 /**
- * The "dialog" that shows from "CyanogenMod Legal" in the Settings app.
+ * The "dialog" that shows from "OSE Legal" in the Settings app.
  */
 public class SettingsCMLicenseActivity extends AlertActivity
         implements DialogInterface.OnCancelListener, DialogInterface.OnClickListener {
-    private static final String PROPERTY_CMLICENSE_URL = "ro.cmlegal.url";
+    private static final String PROPERTY_CMLICENSE_URL = "ro.oselegal.url";
 
     private WebView mWebView;
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2014 The CyanogenMod Project
+     Copyright (C) 2014 The OSE Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -32,9 +32,9 @@
         <PreferenceScreen
             android:title="@string/block_notifications_title"
             android:summary="@string/block_notifications_summary"
-            android:fragment="com.android.settings.cyanogenmod.SpamList" />
+            android:fragment="com.android.settings.ose.SpamList" />
 
-        <com.android.settings.cyanogenmod.SecureSettingSwitchPreference
+        <com.android.settings.ose.SecureSettingSwitchPreference
             android:key="stats_collection"
             android:title="@string/stats_collection_title"
             android:summary="@string/stats_collection_summary"

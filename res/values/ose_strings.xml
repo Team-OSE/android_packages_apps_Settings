@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2014 The CyanogenMod Project
+     Copyright (C) 2012-2014 The OSE Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -295,10 +295,10 @@
     <string name="no_filters_title">No filters set</string>
 
     <!-- CM Updater -->
-    <string name="cmupdate_settings_title">CyanogenMod updates</string>
+    <string name="cmupdate_settings_title">OSE updates</string>
 
-    <!-- About phone screen, CyanogenMod version -->
-    <string name="mod_version">CyanogenMod version</string>
+    <!-- About phone screen, OSE version -->
+    <string name="mod_version">OSE version</string>
     <string name="mod_version_default">Unknown</string>
     <string name="model_name">Model name</string>
 
@@ -320,8 +320,8 @@
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 
     <!-- Privacy Settings Header item -->
-    <string name="privacy_settings_cyanogenmod_title">Privacy</string>
-    <string name="privacy_settings_cyanogenmod_category" translatable="false">CyanogenMod</string>
+    <string name="privacy_settings_ose_title">Privacy</string>
+    <string name="privacy_settings_ose_category" translatable="false">OSE</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
@@ -925,8 +925,8 @@
     <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
 
     <!-- CM Legal -->
-    <string name="cmlicense_title">CyanogenMod Legal</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="cmlicense_title">OSE Legal</string>
+    <string name="settings_cmlicense_activity_title">OSE Legal</string>
     <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- Screen security -->

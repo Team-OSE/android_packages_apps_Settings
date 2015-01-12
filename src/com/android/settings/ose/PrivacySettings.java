@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2014 The OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.ose;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -37,7 +37,7 @@ public class PrivacySettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.privacy_settings_cyanogenmod);
+        addPreferencesFromResource(R.xml.privacy_settings_ose);
 
         mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
 

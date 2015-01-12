@@ -72,7 +72,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <permission
-        android:name="cyanogenmod.permission.PROTECTED_APP"
+        android:name="ose.permission.PROTECTED_APP"
         android:protectionLevel="signatureOrSystem" />
 
     <application android:label="@string/settings_label"
@@ -717,7 +717,7 @@
                 android:theme="@android:style/Theme.Material.Light.Panel"
                 android:configChanges="orientation|screenSize">
             <intent-filter>
-                <action android:name="android.settings.CMLICENSE" />
+                <action android:name="android.settings.OSELICENSE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -1734,7 +1734,7 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
-        <!-- CyanogenMod activities Start -->
+        <!-- OSE activities Start -->
         <activity android:name="Settings$VoiceWakeupSettingsActivity"
                 android:label="@string/voice_wakeup_settings_title"
                 android:taskAffinity=""
@@ -1791,9 +1791,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".cyanogenmod.ContributorsCloud" />
+        <activity android:name=".ose.ContributorsCloud" />
 
-        <activity android:name=".cyanogenmod.SpamList" />
+        <activity android:name=".ose.SpamList" />
 
         <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
@@ -2094,7 +2094,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".cyanogenmod.PerformanceSettings" />
+        <activity android:name=".ose.PerformanceSettings" />
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
@@ -2119,7 +2119,7 @@
             </intent-filter>
         </receiver>
 
-        <receiver android:name=".cyanogenmod.BootReceiver" android:enabled="true">
+        <receiver android:name=".ose.BootReceiver" android:enabled="true">
             <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -2169,10 +2169,10 @@
         </provider>
 
         <receiver
-            android:name=".cyanogenmod.ProtectedAppsReceiver"
-            android:permission="cyanogenmod.permission.PROTECTED_APP">
+            android:name=".ose.ProtectedAppsReceiver"
+            android:permission="ose.permission.PROTECTED_APP">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.PACKAGE_PROTECTED" />
+                <action android:name="ose.intent.action.PACKAGE_PROTECTED" />
             </intent-filter>
         </receiver>
 

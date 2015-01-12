@@ -1,4 +1,4 @@
-package com.android.settings.cyanogenmod;
+package com.android.settings.ose;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -15,14 +15,14 @@ import java.util.HashSet;
 public class ProtectedAppsReceiver extends BroadcastReceiver {
     private static final String TAG = "ProtectedAppsReceiver";
 
-    public static final String PROTECTED_ACTION = "cyanogenmod.intent.action.PACKAGE_PROTECTED";
+    public static final String PROTECTED_ACTION = "ose.intent.action.PACKAGE_PROTECTED";
     private static final String PROTECTED_CHANGED_ACTION =
-            "cyanogenmod.intent.action.PROTECTED_COMPONENT_UPDATE";
+            "ose.intent.action.PROTECTED_COMPONENT_UPDATE";
     public static final String PROTECTED_STATE =
-            "cyanogenmod.intent.action.PACKAGE_PROTECTED_STATE";
+            "ose.intent.action.PACKAGE_PROTECTED_STATE";
     public static final String PROTECTED_COMPONENTS =
-            "cyanogenmod.intent.action.PACKAGE_PROTECTED_COMPONENTS";
-    private static final String PROTECTED_APP_PERMISSION = "cyanogenmod.permission.PROTECTED_APP";
+            "ose.intent.action.PACKAGE_PROTECTED_COMPONENTS";
+    private static final String PROTECTED_APP_PERMISSION = "ose.permission.PROTECTED_APP";
 
     @Override
     public void onReceive(Context context, Intent intent) {

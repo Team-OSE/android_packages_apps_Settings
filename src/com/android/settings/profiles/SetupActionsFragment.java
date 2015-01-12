@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2014 The OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,7 +58,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import com.android.settings.R;
 import com.android.settings.SubSettings;
-import com.android.settings.cyanogenmod.DeviceUtils;
+import com.android.settings.ose.DeviceUtils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.profiles.actions.ItemListAdapter;
 import com.android.settings.profiles.actions.item.AirplaneModeItem;

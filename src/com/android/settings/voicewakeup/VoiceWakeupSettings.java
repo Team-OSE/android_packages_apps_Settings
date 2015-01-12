@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2014 The OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,8 +41,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.cyanogenmod.BaseSystemSettingSwitchBar;
-import com.android.settings.cyanogenmod.ShortcutPickHelper;
+import com.android.settings.ose.BaseSystemSettingSwitchBar;
+import com.android.settings.ose.ShortcutPickHelper;
 
 public class VoiceWakeupSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener,
@@ -52,9 +52,9 @@ public class VoiceWakeupSettings extends SettingsPreferenceFragment
     private static final String KEY_RETRAIN = "retrain";
     private static final String KEY_SHORTCUT_PICKER = "voice_wakeup_launch_intent";
     private static final ComponentName VOICE_TRAINING_COMPONENT = new ComponentName(
-            "com.cyanogenmod.voicewakeup", "com.cyanogenmod.voicewakeup.VoiceTrainingActivity");
+            "com.ose.voicewakeup", "com.ose.voicewakeup.VoiceTrainingActivity");
     private static final ComponentName VOICE_TRAINING_SERVICE = new ComponentName(
-            "com.cyanogenmod.voicewakeup", "com.cyanogenmod.voicewakeup.VoiceWakeupEngine");
+            "com.ose.voicewakeup", "com.ose.voicewakeup.VoiceWakeupEngine");
 
     private BaseSystemSettingSwitchBar mVoiceWakeupEnabler;
 

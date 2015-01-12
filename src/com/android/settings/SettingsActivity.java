@@ -205,7 +205,7 @@ public class SettingsActivity extends Activity
 
     private static final String EMPTY_QUERY = "";
 
-    private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.cyanogenmod.voicewakeup";
+    private static final String VOICE_WAKEUP_PACKAGE_NAME = "com.ose.voicewakeup";
 
     private static boolean sShowNoHomeNotice = false;
 
@@ -244,7 +244,7 @@ public class SettingsActivity extends Activity
             R.id.nfc_payment_settings,
             R.id.home_settings,
             R.id.dashboard,
-            R.id.privacy_settings_cyanogenmod
+            R.id.privacy_settings_ose
     };
 
     private static final String[] ENTRY_FRAGMENTS = {
@@ -310,7 +310,7 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
             BlacklistSettings.class.getName(),
-            com.android.settings.cyanogenmod.PrivacySettings.class.getName()
+            com.android.settings.ose.PrivacySettings.class.getName()
     };
 
 
