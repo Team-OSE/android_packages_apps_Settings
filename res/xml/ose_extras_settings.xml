@@ -36,10 +36,6 @@
         android:title="@string/ose_general_settings_title" />
 
     <PreferenceScreen
-        android:fragment="com.android.settings.ose.NotificationAndQSettings"
-        android:title="@string/ose_notification_and_qsettings_title" />
-
-    <PreferenceScreen
         android:fragment="com.android.settings.ose.NotificationDrawerSettings"
         android:title="@string/notification_drawer_title" />
 

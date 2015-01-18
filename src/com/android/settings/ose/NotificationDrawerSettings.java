@@ -28,7 +28,7 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.notification_drawer_settings);
+        addPreferencesFromResource(R.xml.ose_notification_drawer_settings);
 
         mQSTiles = findPreference("qs_order");
     }
