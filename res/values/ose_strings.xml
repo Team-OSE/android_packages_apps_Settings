@@ -1436,6 +1436,7 @@
     <string name="heads_up_snooze_15min">15 minutes</string>
     <string name="heads_up_snooze_20min">20 minutes</string>
     <string name="heads_up_time_out_title">Time out</string>
+    <string name="heads_up_snooze_summary">Swiping up on the heads up notification will snooze it, snooze heads up for <xliff:g id="number">%d</xliff:g> minutes</string>
     <string name="heads_up_time_out_summary">Heads up notification will show up for <xliff:g id="number">%d</xliff:g> seconds</string>
     <string name="heads_up_time_out_never_summary">Heads up notification will show until it is dismissed</string>
     <string name="heads_up_time_out_4sec">4 seconds</string>
