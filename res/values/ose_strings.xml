@@ -1294,6 +1294,9 @@
     <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
     <string name="whisperpush_identitykey_title">Review identity keys</string>
 
+    <string name="navigation_ring_title">Navigation ring targets</string>
+    <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
+
     <!-- Doze pulse (ambient display) notification timeout -->
     <string name="doze_timeout_title">Ambient display timeout</string>
     <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
@@ -1332,5 +1335,4 @@
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Disable search bar in recents menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the search bar in the recents menu</string>
-
 </resources>
