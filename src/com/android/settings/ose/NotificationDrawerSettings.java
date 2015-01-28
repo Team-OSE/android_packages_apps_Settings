@@ -46,17 +46,12 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment
         mQSTiles = findPreference("qs_order");
 
         mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
-        if (!DeviceUtils.isPhone(getActivity())) {
-            prefSet.removePreference(mSmartPulldown);
-        } else {
             // Smart Pulldown
             mSmartPulldown.setOnPreferenceChangeListener(this);
             int smartPulldown = Settings.System.getInt(getContentResolver(),
                     Settings.System.QS_SMART_PULLDOWN, 0);
             mSmartPulldown.setValue(String.valueOf(smartPulldown));
             updateSmartPulldownSummary(smartPulldown);
-
-        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
