@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2012-2014 The OSE Project
+<!-- Copyright (C) 2015 OSE Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -1304,4 +1304,8 @@
     <string name="network_traffic_color_reset">Reset color</string>
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
     <string name="ok">OK</string>
+
+    <!-- Text for disabling FC notificaitons -->
+    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
+    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
 </resources>
