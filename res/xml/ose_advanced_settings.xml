@@ -19,6 +19,11 @@
     android:title="@string/ose_advanced_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settings.ose.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary" />
+
     <PreferenceScreen
             android:key="hfm_settings"
             android:title="@string/hfm_pref_screen_title"
