@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 The OSE Project
+ * Copyright (C) 2015 OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -63,12 +63,12 @@ public class ButtonBacklightBrightness extends DialogPreference implements
 
         setDialogLayoutResource(R.layout.button_backlight);
 
-        if (isKeyboardSupported()) {
+        if (isKeyboardSupported(context)) {
             mKeyboardBrightness = new BrightnessControl(
                     Settings.System.KEYBOARD_BRIGHTNESS, false);
             mActiveControl = mKeyboardBrightness;
         }
-        if (isButtonSupported()) {
+        if (isButtonSupported(context)) {
             boolean isSingleValue = !context.getResources().getBoolean(
                     com.android.internal.R.bool.config_deviceHasVariableButtonBrightness);
 
@@ -211,8 +211,8 @@ public class ButtonBacklightBrightness extends DialogPreference implements
         }
     }
 
-    public boolean isButtonSupported() {
-        final Resources res = getContext().getResources();
+    public static boolean isButtonSupported(Context context) {
+        final Resources res = context.getResources();
         final int deviceKeys = res.getInteger(
                 com.android.internal.R.integer.config_deviceHardwareKeys);
         // All hardware keys besides volume and camera can possibly have a backlight
@@ -227,8 +227,8 @@ public class ButtonBacklightBrightness extends DialogPreference implements
         return hasBacklightKey && hasBacklight;
     }
 
-    public boolean isKeyboardSupported() {
-        return getContext().getResources().getInteger(
+    public static boolean isKeyboardSupported(Context context) {
+        return context.getResources().getInteger(
                 com.android.internal.R.integer.config_keyboardBrightnessSettingDefault) > 0;
     }
 

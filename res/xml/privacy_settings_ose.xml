@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2014 The OSE Project
+<!-- Copyright (C) 2015 OSE Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -38,6 +37,14 @@
             android:key="stats_collection"
             android:title="@string/stats_collection_title"
             android:summary="@string/stats_collection_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="whisperpush"
+            android:title="@string/whisperpush_title"
+            android:summary="@string/whisperpush_summary">
+            <intent android:targetPackage="org.whispersystems.whisperpush"
+                    android:targetClass="org.whispersystems.whisperpush.ui.PreferenceActivity" />
+        </Preference>
 
 </PreferenceScreen>
