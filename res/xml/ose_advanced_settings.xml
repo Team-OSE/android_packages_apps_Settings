@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 OSE
+<!-- Copyright (C) 2015 OSE Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,25 +19,36 @@
     android:title="@string/ose_advanced_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.android.settings.ose.SystemSettingSwitchPreference
-        android:key="disable_fc_notifications"
-        android:title="@string/disable_fc_notifications_title"
-        android:summary="@string/disable_fc_notifications_summary" />
-
+    <!-- Ad Blocker -->
     <PreferenceScreen
             android:key="hfm_settings"
             android:title="@string/hfm_pref_screen_title"
             android:fragment="com.android.settings.ose.hfm.HfmSettings" />
 
+    <!-- Prop Modder -->
     <PreferenceScreen
             android:key="buildprop_modder"
             android:title="@string/propmodder_title"
             android:fragment="com.android.settings.ose.PropModder"/>
 
+    <!-- Init.d Tweaks -->
     <PreferenceScreen
             android:id="@+id/initD"
             android:fragment="com.android.settings.ose.InitD"
             android:title="@string/init_d_title"
             android:summary="@string/header_summary_init_d" />
+
+    <!-- Recents Searchbar -->
+    <com.android.settings.ose.SystemSettingSwitchPreference
+        android:key="recents_show_hide_search_bar"
+        android:title="@string/recents_show_searchbar"
+        android:summary="@string/recents_show_searchbar_summary"
+        android:defaultValue="false" />
+
+    <!-- Force Close Notifications -->
+    <com.android.settings.ose.SystemSettingSwitchPreference
+        android:key="disable_fc_notifications"
+        android:title="@string/disable_fc_notifications_title"
+        android:summary="@string/disable_fc_notifications_summary" />
 
 </PreferenceScreen>

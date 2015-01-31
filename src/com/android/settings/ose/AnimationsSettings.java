@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 OSE
+ * Copyright (C) 2015 OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -49,7 +49,7 @@ public class AnimationsSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.ose_animations_settings);
+        addPreferencesFromResource(R.xml.ose_appearance_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 

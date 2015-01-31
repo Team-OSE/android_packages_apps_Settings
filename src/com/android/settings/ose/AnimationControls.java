@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 OSE
+ * Copyright (C) 2015 OSE Project
  *
  * Modified by OSE
  *

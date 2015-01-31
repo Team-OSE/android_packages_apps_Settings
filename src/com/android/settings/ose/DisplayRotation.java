@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The OSE Project
+ * Copyright (C) 2015 OSE Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@ import com.android.settings.SettingsPreferenceFragment;
 public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String TAG = "DisplayRotation";
 
-    private static final String KEY_ACCELEROMETER = "accelerometer";
+    public static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_LOCKSCREEN_ROTATION = "lockscreen_rotation";
     private static final String ROTATION_0_PREF = "display_rotation_0";
     private static final String ROTATION_90_PREF = "display_rotation_90";
