@@ -1275,13 +1275,6 @@
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
 
-    <!-- Doze pulse (ambient display) notification timeout -->
-    <string name="doze_timeout_title">Ambient display timeout</string>
-    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
-
-    <!-- Doze (ambient display) preference category -->
-    <string name="display_category_doze_options_title">Ambient display options</string>
-
     <!-- Network traffic -->
     <string name="traffic_category">Traffic Indicators</string>
     <string name="network_traffic_title">Network traffic</string>
@@ -1313,4 +1306,12 @@
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Disable search bar in recents menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the search bar in the recents menu</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Ambient display (doze) options</string>
+    <string name="doze_timeout_title">Doze pulse timeout</string>
+    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+    <string name="doze_trigger_motion_title">Doze TriggerSensors</string>
+    <string name="doze_trigger_motion_summary_on">Doze pulse will be triggered by pick up gesture/significant motion sensor and notifications</string>
+    <string name="doze_trigger_motion_summary_off">Doze pulse will only be triggered by notifications</string>
 </resources>
