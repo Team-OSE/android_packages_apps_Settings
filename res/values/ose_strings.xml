@@ -1419,4 +1419,7 @@
     <!-- SIM Sound Settings -->
     <string name="sim_ringtone_title">SIM %d ringtone</string>
 
+    <!-- Media Interruptions -->
+    <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
+    <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
 </resources>
