@@ -50,6 +50,11 @@
                     android:targetClass="com.ose.updater.UpdatesSettings" />
         </PreferenceScreen>
 
+        <!-- Advanced mode -->
+        <com.android.settings.ose.SecureSettingSwitchPreference
+            android:key="advanced_mode"
+            android:title="@string/advanced_mode_title"/>
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -183,10 +188,5 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
-
-        <!-- Advanced mode -->
-        <SwitchPreference
-                android:key="advanced_mode"
-                android:title="@string/advanced_mode_title"/>
 
 </PreferenceScreen>
