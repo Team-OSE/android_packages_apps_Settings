@@ -187,7 +187,6 @@
         <!-- Advanced mode -->
         <SwitchPreference
                 android:key="advanced_mode"
-                android:title="@string/advanced_mode_title"
-                android:summary="@string/advanced_mode_summary"/>
+                android:title="@string/advanced_mode_title"/>
 
 </PreferenceScreen>
