@@ -34,6 +34,7 @@
     <string name="ose_notification_and_qsettings_title">Notifications and QuickSettings</string>
     <string name="ose_appearance_settings_title">Appearance</string>
     <string name="ose_advanced_settings_title">Advanced</string>
+    <string name="ose_animations_settings_title">Animations</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
