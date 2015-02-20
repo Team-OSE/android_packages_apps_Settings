@@ -31,6 +31,10 @@
         android:fragment="com.android.settings.ose.AppearanceSettings"
         android:title="@string/ose_appearance_settings_title" />
 
+     <PreferenceScreen
+        android:fragment="com.android.settings.ose.AnimationsSettings"
+        android:title="@string/ose_animations_settings_title" />
+
     <PreferenceScreen
         android:fragment="com.android.settings.ose.AdvancedSettings"
         android:title="@string/ose_advanced_settings_title" />

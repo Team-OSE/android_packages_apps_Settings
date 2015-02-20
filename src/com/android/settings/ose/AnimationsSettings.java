@@ -49,7 +49,7 @@ public class AnimationsSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.ose_appearance_settings);
+        addPreferencesFromResource(R.xml.ose_animation_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
