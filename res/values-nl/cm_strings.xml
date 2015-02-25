@@ -211,6 +211,30 @@
   <string name="update_recovery_summary">Recovery bijwerken met systeemupdates</string>
   <string name="update_recovery_on_warning">Let op: wanneer deze functie is ingeschakeld, wordt uw huidige recovery vervangen door de recovery die met uw huidige besturingssysteem geleverd wordt.\n\nUw recovery wordt met systeemupdates ook bijgewerkt om compatibiliteit met toekomstige versies te garanderen.\n\nWilt u deze functie inschakelen?</string>
   <string name="update_recovery_off_warning">Let op: als deze functie is uitgeschakeld, wordt uw recovery niet bijgewerkt bij systeemupdates.\n\nToekomstige systeemupdates kunnen wellicht niet geïnstalleerd worden op oude recovery-versies.\n\nWeet u zeker dat u deze functie wilt uitschakelen?</string>
+  <string name="update_recovery_on_warning">Let op: als deze functie is ingeschakeld, wordt uw recovery vervangen door de recovery die met uw huidige besturingssysteem geleverd wordt.\n\nUw recovery wordt met systeemupdates ook bijgewerkt om compatibiliteit met toekomstige versies te garanderen.\n\nWilt u deze functie inschakelen?</string>
+  <string name="update_recovery_off_warning">Let op: als deze functie is uitgeschakeld, wordt uw recovery niet bijgewerkt bij systeemupdates.\n\nToekomstige systeemupdates kunnen wellicht niet geïnstalleerd worden op oude recovery-versies.\n\nWeet u zeker dat u deze functie wilt uitschakelen?</string>
+  <string name="ok">OK</string>
+  <string name="quiet_hours_title">Stille uren</string>
+  <string name="quiet_hours_summary">Uren instellen waarin apparaat stil moet zijn</string>
+  <string name="quiet_hours_enabled">Stille uren toepassen</string>
+  <string name="quiet_hours_ringer">Beltoon</string>
+  <string name="quiet_hours_mute">Meldingen</string>
+  <string name="quiet_hours_mute_summary">Meldingsgeluid dempen</string>
+  <string name="quiet_hours_system">Systeemgeluiden</string>
+  <string name="quiet_hours_system_summary">Systeemgeluiden dempen</string>
+  <string name="quiet_hours_still">Trillen</string>
+  <string name="quiet_hours_still_summary">Trillen uitschakelen</string>
+  <string name="quiet_hours_dim">Meldingsled</string>
+  <string name="quiet_hours_dim_summary">Meldingsled uitschakelen</string>
+  <string name="quiet_hours_haptic">Haptische feedback</string>
+  <string name="quiet_hours_haptic_summary">Haptische feedback uitschakelen</string>
+  <string name="quiet_hours_active_period">Actief van <xliff:g id="start">%1$s</xliff:g> tot <xliff:g id="end">%2$s</xliff:g></string>
+  <string name="quiet_hours_ringer_allow_all">Beltoon bij alle oproepen</string>
+  <string name="quiet_hours_ringer_allow_contacts">Beltoon bij oproepen van contacten</string>
+  <string name="quiet_hours_ringer_allow_starred">Beltoon bij oproepen van favoriete contacten</string>
+  <string name="quiet_hours_ringer_mute_all">Stil bij alle oproepen</string>
+  <string name="start_time_title">Begin</string>
+  <string name="end_time_title">Einde</string>
   <string name="mod_version">CyanogenMod-versie</string>
   <string name="mod_version_default">Onbekend</string>
   <string name="model_name">Modelnaam</string>
@@ -713,4 +737,30 @@
   <string name="gestures_action_search">Zoeken</string>
   <string name="gestures_action_recent">Recente apps</string>
   <string name="stylus_app_not_installed">%s is niet geïnstalleerd</string>
+
+  <string name="device_status_summary_cm" product="tablet">Status van de accu, het netwerk en andere gegevens</string>
+  <string name="device_status_summary_cm" product="default">Accustatus, accuniveau, enzovoort</string>
+  <string name="wifi_ap_clients_title">Aangesloten apparaten</string>
+  <string name="wifi_ap_client_ap_disabled">Hotspot uitgeschakeld</string>
+  <string name="wifi_ap_client_none_connected">Geen apparaten aangesloten</string>
+  <string name="profile_menu_delete_title">Verwijderen</string>
+  <string name="profile_menu_triggers_title">Triggers aanpassen</string>
+  <string name="profile_action_none">Niet wijzigen</string>
+  <string name="profile_action_disabled">Uitschakelen</string>
+  <string name="profile_action_enable">Inschakelen</string>
+  <string name="profile_tabs_wifi">Wifi</string>
+  <string name="profile_tabs_bluetooth">Bluetooth</string>
+  <string name="profile_tabs_nfc">NFC</string>
+  <string name="profile_setup_setup_triggers_title">Stap 1: triggers toevoegen</string>
+  <string name="profile_setup_setup_triggers_title_config">Triggers aanpassen: <xliff:g id="profile_name">%1$s</xliff:g></string>
+  <string name="profile_setup_actions_title">Stap 2: acties instellen</string>
+  <string name="profile_setup_actions_title_config">Acties aanpassen</string>
+  <string name="no_bluetooth_triggers">Geen Bluetooth-apparaten gekoppeld.\nTik om Bluetooth-apparaat te koppelen alvorens triggers in te stellen.</string>
+  <string name="no_wifi_triggers">Geen draadloze toegangspunten ingesteld.\nTik om met wifi te verbinden alvorens triggers in te stellen.</string>
+  <string name="profile_setup_setup_triggers_description">Selecteer de triggers die dit profiel activeren</string>
+  <string name="profile_setup_actions_description">Selecteer nu wat er moet gebeuren wanneer dit profiel wordt geactiveerd</string>
+  <string name="profile_triggers_header">Triggers die dit profiel activeren</string>
+  <string name="no_triggers_configured">Geen triggers ingesteld. Tik om toe te voegen.</string>
+  <string name="no_triggers_configured_nfc">Tik om nieuwe NFC-trigger in te stellen.</string>
+  <string name="sound_ringtone_multisim_options">Standaardbeltoon wijzigen</string>
 </resources>

@@ -180,6 +180,7 @@
   <string name="select_contact">Kontakt auswielen</string>
   <string name="lockpattern_reset_button">Muster zrécksetzen</string>
   <string name="lockpattern_settings_reset_summary">Gëff d\'E-Mail-Adress vun dengem primäre Kont zesumme mam Passwuert an, fir d\'Muster zréckzesetzen</string>
+<<<<<<< HEAD
   <string name="menu_hidden_apps_delete">Zrécksetzen</string>
   <string name="menu_hidden_apps_reset_lock">Spärmuster zrécksetzen</string>
   <string name="protected_apps">Geschützt Appen</string>
@@ -189,6 +190,152 @@
   <string name="pa_login_submit_button">Aloggen</string>
   <string name="pa_login_checking_password">Kont gëtt iwwerpréift\u2026</string>
   <string name="pa_login_incorrect_login">Login war inkorrekt</string>
+=======
+  <string name="lockpattern_settings_enable_error_path_title">Feeler uweisen</string>
+  <string name="lockpattern_settings_enable_dots_title">Punkten uweisen</string>
+  <string name="screen_security_category">Schiermsécherheet</string>
+  <string name="screen_security_summary">Spärschierm-Sécherheetsastellungen uweisen oder änneren</string>
+  <string name="unlock_scramble_pin_layout_title">Zoufälleg Unuerdnung</string>
+  <string name="unlock_scramble_pin_layout_summary">Bei all Entspärversuch d\'Zifferereiefolleg zoufälleg nei wielen</string>
+  <string name="unlock_menu_unlock_title">Mat Menü entspären</string>
+  <string name="unlock_menu_unlock_summary">Duerch Drécke vum Menü-Knäppche gëtt den Apparat entspäert</string>
+  <string name="unlock_home_unlock_title">Mat Startknäppchen entspären</string>
+  <string name="unlock_home_unlock_summary">Duerch Drécke vum Startsäit-Knäppche gëtt den Apparat entspäert</string>
+  <string name="unlock_camera_unlock_title">Mat Kameraknäppchen entspären</string>
+  <string name="unlock_camera_unlock_summary">Duerch Drécke vum Kamera-Knäppche gëtt den Apparat entspäert</string>
+  <string name="unlock_quick_unlock_control_title">Séiert Entspären</string>
+  <string name="unlock_quick_unlock_control_summary">Automatesch Entspäre wann de PIN oder d\'Passwuert korrekt sinn</string>
+  <string name="unlock_buttons_disabled_by_security">De Spärschierm ass geséchert</string>
+  <string name="lockscreen_widgets_category_title">Widgeten</string>
+  <string name="lockscreen_maximize_widgets_title">Widgete maximéieren</string>
+  <string name="lockscreen_maximize_widgets_summary">Beim Aschalten d\'Widgete maximéieren</string>
+  <string name="lockscreen_enable_camera_title">Kamera-Widget</string>
+  <string name="safe_headset_volume_title">Lautstäerktbegrenzung vun de Kopfhörer</string>
+  <string name="safe_headset_volume_restore_title">Lautstäerkt beim Connectéiere vu Kopfhörer reduzéieren</string>
+  <string name="cyanogenmod_waiver_title">Verzichtserkläerung</string>
+  <string name="cyanogenmod_waiver_body">D\'Ännere vun dëser Astellung kéint géint Gesetzer verstoussen.\n\nAndeem s du \"OK\" drécks, bestätegs du, CyanogenMod a seng Matwierkend vu sämtlechen domat verbonnene rechtleche Verbinglechkeeten, ë.a. Schuedensersazflichten, ze befreien.</string>
+  <string name="quick_settings_panel_title">Panneau mat séieren Astellungen</string>
+  <string name="title_static_tiles">Statesch Kachelen</string>
+  <string name="tile_picker_title">Kachelen a Layout</string>
+  <string name="tile_picker_summary">Kachelen auswielen, oder hir Reiefolleg änneren</string>
+  <string name="tile_choose_title">Kachel auswielen</string>
+  <string name="title_qs_small_icons">Méi kleng Kachelen uweisen</string>
+  <string name="summary_qs_small_icons">Méi kleng Kachele benotze fir d\'Kolonnenzuel z\'erhéijen</string>
+  <string name="category_heads_up">Pop-Up-Notifikatiounen</string>
+  <string name="summary_heads_up_enabled">Pop-Up-Notifikatioune sinn aktivéiert</string>
+  <string name="summary_heads_up_disabled">Pop-Up-Notifikatioune sinn desaktivéiert</string>
+  <string name="add_heads_up_package">App dobäisetzen</string>
+  <string name="add_heads_up_dnd_summary">Pop-Up-Notifikatiounen an dësen Appen net uweisen</string>
+  <string name="add_heads_up_blacklist_summary">Notifikatioune fir dës Appen net als Pop-up uweisen</string>
+  <string name="heads_up_dnd_title">Net stéieren</string>
+  <string name="heads_up_blacklist_title">Schwaarz Lëscht</string>
+  <string name="heads_up_disabled_notice">Fir Appen z\'erméiglechen, interaktiv Notifkatiounen an enger Pop-Up-Fënster duerzestellen, aktivéier d\'Pop-Up-Notifikatiounen.</string>
+  <string name="title_tile_airplane">Fligermodus</string>
+  <string name="title_tile_battery">Akku</string>
+  <string name="title_tile_bluetooth">Bluetooth</string>
+  <string name="title_tile_brightness">Hellegkeet</string>
+  <string name="title_tile_camera">Fotoapparat</string>
+  <string name="title_tile_compass">Kompass</string>
+  <string name="title_tile_heads_up">Pop-Up-Notifikatiounen</string>
+  <string name="title_tile_sleep">Standby</string>
+  <string name="title_tile_gps">Standuert</string>
+  <string name="title_tile_torch">Täscheluucht</string>
+  <string name="title_tile_lockscreen">Schiermspär</string>
+  <string name="title_tile_lte">LTE</string>
+  <string name="title_tile_mobiledata">Mobil Daten</string>
+  <string name="title_tile_profile">Profil</string>
+  <string name="title_tile_performance_profile">Leeschtungsprofil</string>
+  <string name="title_tile_autorotate">Orientéierung</string>
+  <string name="title_tile_settings">Astellungen</string>
+  <string name="title_tile_sound">Toun</string>
+  <string name="title_tile_sync">Sync</string>
+  <string name="title_tile_wifiap">WLAN-Hotspot</string>
+  <string name="title_tile_wifi">WLAN</string>
+  <string name="title_tile_user">Benotzerwiessel</string>
+  <string name="title_tile_networkmode">Netzwierk-Modus</string>
+  <string name="title_tile_nfc">NFC</string>
+  <string name="title_tile_screen_timeout">Schierm-Timeout</string>
+  <string name="title_tile_quiet_hours">Roueg Stonnen</string>
+  <string name="title_tile_volume">Lautstäerk</string>
+  <string name="title_tile_expanded_desktop">Vergréisserten Desktop</string>
+  <string name="title_tile_network_adb">ADB iwwer Netzwierk</string>
+  <string name="title_tile_themes">Designen</string>
+  <string name="title_dynamic_tiles">Dynamesch Kachelen</string>
+  <string name="dynamic_tiles_note_title">Note</string>
+  <string name="dynamic_tiles_note_summary">Dynamesch Kachele gi just ugewise, wa se duerch e Systemevenement ausgeléist ginn</string>
+  <string name="title_dynamic_alarm">Wecker</string>
+  <string name="title_dynamic_bugreport">Feelerbericht</string>
+  <string name="title_dynamic_dock_battery">Dock-Akku</string>
+  <string name="title_dynamic_equalizer">Equalizer</string>
+  <string name="title_dynamic_ime">Auswiel vun der Method fir anzeginn</string>
+  <string name="title_dynamic_usbtether">USB-Tethering</string>
+  <string name="title_dynamic_wifi">Schierm iwwerdroen</string>
+  <string name="title_general">Allgemeng</string>
+  <string name="title_quick_pulldown">Séiert Opmaachen</string>
+  <string name="summary_quick_pulldown">D\'Erofzéie vun der Notifikatiounsläischt um %1$s Rand mécht déi séier Astellungen op</string>
+  <string name="quick_pulldown_summary_left">Lénks</string>
+  <string name="quick_pulldown_summary_right">Riets</string>
+  <string name="quick_pulldown_off">Aus</string>
+  <string name="quick_pulldown_left">Lénks</string>
+  <string name="quick_pulldown_right">Riets</string>
+  <string name="title_collapse_panel">Panneau automatesch zoumaachen</string>
+  <string name="summary_collapse_panel">De Panneau mat de séieren Astellungen zoumaachen nodeem eng Kachel gedréckt gouf</string>
+  <string name="pref_network_mode_title">Netzwierkmodus</string>
+  <string name="pref_screentimeout_mode_title">Schierm-Timeout</string>
+  <string name="pref_ring_mode_title">Tounmodussen</string>
+  <string name="pref_ring_mode_summary">Schellmodussen, tëscht deenen ëmgeschalt gëtt</string>
+  <string name="cm_sound_mode_silent">Stëll</string>
+  <string name="cm_sound_mode_vibrate">Vibréieren</string>
+  <string name="cm_sound_mode_sound">Toun</string>
+  <string name="cm_sound_mode_soundVibrate">Toun a Vibréieren</string>
+  <string name="pref_location_mode_title">Standuertmodussen</string>
+  <string name="pref_location_mode_summary">All d\'Modussen desaktivéiere fir d\'Standardverhalen ze reaktivéieren</string>
+  <string name="cm_location_mode_off">Standuert aus</string>
+  <string name="cm_location_mode_battery_saving">Akku spueren</string>
+  <string name="cm_location_mode_device_only">Just Apparat</string>
+  <string name="cm_location_mode_high_accuracy">Héich Genauegkeet</string>
+  <string name="tiles_reset_title">Zrécksetzen</string>
+  <string name="tiles_reset_message">D\'Kachelen an hire Layout op d\'Standardastellungen zrécksetzen?</string>
+  <string name="auto_brightness_setup_title">Automatesch Hellegkeet</string>
+  <string name="auto_brightness_twilight_adjustment">Un de Sonnenopgank an -ënnergank upassen</string>
+  <string name="light_sensor_current_value">Aktuell Luuchtsensorwäerter: <xliff:g id="light_level">%d</xliff:g> lux</string>
+  <string name="auto_brightness_dialog_title">Automatesch Hellegkeetsniveauen</string>
+  <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lx</string>
+  <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e lux</string>
+  <string name="auto_brightness_adjust_button">Ajustéieren</string>
+  <string name="auto_brightness_close_button">Zoumaachen</string>
+  <string name="auto_brightness_reset_button">Zrécksetzen</string>
+  <string name="auto_brightness_split_dialog_title">Hellegkeetsstufen opdeelen</string>
+  <string name="auto_brightness_level_dialog_title">Hellegkeetsstufen</string>
+  <string name="auto_brightness_lux">Ëmgebungshellegkeet (lux)</string>
+  <string name="auto_brightness_backlight">Schiermhellegkeet (%)</string>
+  <string name="auto_brightness_reset_dialog_title">Niveauen zrécksetzen?</string>
+  <string name="auto_brightness_reset_confirmation">All d\'Hellegkeetsstufe ginn op hir Standardastellungen zréckgesat.</string>
+  <string name="auto_brightness_split_lux_format">Deelungspositioun (tëscht <xliff:g id="min">%1$d</xliff:g> a(n) <xliff:g id="max">%2$d</xliff:g> lux)</string>
+  <string name="auto_brightness_level_options">Optioune fir d\'Liichtniveauen</string>
+  <string name="auto_brightness_menu_edit">Änneren</string>
+  <string name="auto_brightness_menu_split">Opdeelen</string>
+  <string name="auto_brightness_menu_remove">Läschen</string>
+  <string name="auto_brightness_preview">Virschau</string>
+  <string name="auto_brightness_preview_dialog_title">Virschau vun der Hellegkeetskurv</string>
+  <string name="auto_brightness_help_dialog_title">Hëllef</string>
+  <string name="auto_brightness_help_text"><b>Wéi gëtt d\'Hellegkeet berechent?</b>
+\n\n
+De Verlaf vun der Hellegkeet gëtt duerch eng <i>kubesch Interpolatioun</i> unhand vun der Unzuel un <i>Trennplaze</i> berechent - anescht wéi allgemeng ugeholl, gëtt e bestëmmten Ëmgebungshellegkeetsberäich net enger konstanter Schiermhellegkeet zougeuerdnet. Duerch dës Aart vun der Berechnung verursaache kleng Ännerunge vun der Ëmgebungshellegkeet keng grouss Spréng vun der Schiermhellegkeet.\n
+Well d\'Ofschätzung vum exakte Verlaf allerdéngs net ganz einfach ass, kann de berechnete Verlaf an der Virschaufënster ugekuckt ginn. D\'Virschau weist de Verlaf mat <i>logarithmescher</i>
+Skaléierung, sou datt all d\'Trennplazen ënnerscheedbar sinn. Bei Verwennung vun enger linearer Skaléierung wieren déi tendenziell méi wichtig Trennplazen am ënnere Beräich vun der Ëmgebungshellegkeet net z\'ënnerscheeden.
+\n\n
+<b>Wéi kann den Hellegkeetsverlaf verännert ginn?</b>
+\n\n
+All Zeil an der Hellegkeetslëscht entsprécht enger <i>Trennplaz</i> vum Hellegkeetsverlaf. De Schiermhellegkeetswäert vun der Trennplaz kann duerch de Regeleran der jeeweileger Zeil verännert ginn. Während dem Regléiere gëtt déi momentan Schiermhellegkeet op de gewielte Wäert agestallt, fir déi gewielten Hellegkeet ofschätzen ze kënnen.\n
+Duerch laangt Drécken op d\'Zeile sti weider Optiounen zur Verfügung. Duerch Drécken op \"Beaarbechten\" kënne souwuel den Ëmgebungshellegkeetswäaert, wéi och d\'Trennplaz verännert ginn, an och de Schiermhellegkeetswäert manuell definéiert ginn. Duerch Drécken op \"Hellegkeetsstufen opdeelen\" kann eng Zeil duplizéiert ginn, fir zousätzlech Trennplazen dobäizesetzen. Duerch Drécken op \"Läschen\" kann déi ausgewielten Trennplaz aus dem Hellegkeetsverlaf geläscht ginn.</string>
+  <string name="auto_brightness_sensitivity_title">Upassungssensibilitéit</string>
+  <string name="auto_brightness_sensitivity_verylow">Ganz niddreg</string>
+  <string name="auto_brightness_sensitivity_low">Niddreg</string>
+  <string name="auto_brightness_sensitivity_medium">Mëttel</string>
+  <string name="auto_brightness_sensitivity_high">Héich</string>
+  <string name="auto_brightness_sensitivity_veryhigh">Ganz héich</string>
+>>>>>>> fc062e9... Automatic translation import
   <string name="display_rotation_title">Rotéierung</string>
   <string name="display_rotation_disabled">Desaktivéiert</string>
   <string name="display_rotation_unit">Grad</string>
@@ -198,6 +345,8 @@
   <string name="display_rotation_90_title">90 Grad</string>
   <string name="display_rotation_180_title">180 Grad</string>
   <string name="display_rotation_270_title">270 Grad</string>
+  <string name="advanced_reboot_title">Erweiderten Neistart</string>
+  <string name="advanced_reboot_summary">Wann entspäert, Optioune am Startmenü uweise fir den Neistart an de Recuperatiounsmodus, de Bootloader oder fir e séieren Neistart auszeféieren</string>
   <string name="app_security_title">App-Sécherheet</string>
   <string name="sms_security_check_limit_title">SMS-Messagëlimitt</string>
   <string name="sms_security_check_limit_summary">Appe kënne(n) %d Messagen an 30 Minutte schécken ier eng Bestätegung gefrot gëtt</string>
@@ -210,6 +359,30 @@
   <string name="update_recovery_title">Cyanogen-Recovery aktualiséieren</string>
   <string name="update_recovery_summary">De Recovery-Programm zesumme mam System aktualiséieren</string>
   <string name="update_recovery_off_warning">WARNUNG: Wann dës Funktioun deaktivéiert ass, gëtt däin installéierte Recovery-Programm net mat dengem System aktualiséiert.\n\nZukünfteg System-Aktualiséierungen loosse sech mat veraalten oder eegene Recovery-Programmer eventuell net installéierne.\n\nWëlls du dës Funktioun sécher deaktivéieren?</string>
+  <string name="update_recovery_summary">De Recovery-System zesumme mam System aktualiséieren</string>
+  <string name="update_recovery_off_warning">WARNUNG: Wann dës Funktioun deaktivéiert ass, gëtt däin installéierte Recovery-Programm net mat dengem System aktualiséiert.\n\nZukünfteg System-Aktualiséierungen loosse sech mat veraalten oder eegene Recovery-Programmer eventuell net installéierne.\n\nWëlls du dës Funktioun sécher deaktivéieren?</string>
+  <string name="ok">OK</string>
+  <string name="quiet_hours_title">Roueg Stonnen</string>
+  <string name="quiet_hours_summary">D\'Auerzäite konfiguréieren tëscht deenen den Apparat soll roueg sinn</string>
+  <string name="quiet_hours_enabled">Roueg stonnen aktiv</string>
+  <string name="quiet_hours_ringer">Telefons-Schelltoun</string>
+  <string name="quiet_hours_mute">Notifikatiounen</string>
+  <string name="quiet_hours_mute_summary">Notifikatioune rouegstellen</string>
+  <string name="quiet_hours_system">Systemtéin</string>
+  <string name="quiet_hours_system_summary">Systemtéin desaktivéieren</string>
+  <string name="quiet_hours_still">Vibratiounen</string>
+  <string name="quiet_hours_still_summary">Vibratiounen desaktivéieren</string>
+  <string name="quiet_hours_dim">Notifikatiounsluucht</string>
+  <string name="quiet_hours_dim_summary">Notifikatiounsluucht desaktivéieren</string>
+  <string name="quiet_hours_haptic">Haptesche Feedback</string>
+  <string name="quiet_hours_haptic_summary">Haptesche Feedback desaktivéieren</string>
+  <string name="quiet_hours_active_period">Aktiv vu(n) <xliff:g id="start">%1$s</xliff:g> bis <xliff:g id="end">%2$s</xliff:g></string>
+  <string name="quiet_hours_ringer_allow_all">Bei allen Uriff schellen</string>
+  <string name="quiet_hours_ringer_allow_contacts">Bei alle Kontakter schellen</string>
+  <string name="quiet_hours_ringer_allow_starred">Bei preferréierte Kontakter schellen</string>
+  <string name="quiet_hours_ringer_mute_all">Schelltoun fir all Uruffer roueg schalten</string>
+  <string name="start_time_title">Start</string>
+  <string name="end_time_title">Schluss</string>
   <string name="mod_version">CyanogenMod-Versioun</string>
   <string name="mod_version_default">Onbekannt</string>
   <string name="model_name">Modellnumm</string>
