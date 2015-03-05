@@ -352,7 +352,6 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         PREF_TOUCH_SOUNDS,
         PREF_DOCK_AUDIO_MEDIA,
         PREF_EMERGENCY_TONE,
-        PREF_VIBRATION_INTENSITY,
         PREF_VOLUME_STEPS_ALARM,
         PREF_VOLUME_STEPS_DTMF,
         PREF_VOLUME_STEPS_MUSIC,

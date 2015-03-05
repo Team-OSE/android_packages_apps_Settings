@@ -97,7 +97,7 @@
                 settings:advanced="true"/>
 
         <!-- Headset -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.android.settings.ose.SystemSettingSwitchPreference
                 android:key="headset_connect_player"
                 android:title="@string/headset_connect_player_title"
                 android:summary="@string/headset_connect_player_summary"
@@ -122,7 +122,7 @@
                 android:persistent="false" />
 
         <!-- Vibrate on touch -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.android.settings.ose.SystemSettingSwitchPreference
                 android:key="haptic_feedback_enabled"
                 android:title="@string/vibrate_on_touch_title"
                 android:defaultValue="true"/>
